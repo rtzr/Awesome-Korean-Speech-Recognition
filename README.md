@@ -60,10 +60,10 @@ API로 모델을 사용해 볼 수 있는 개발자 사이트입니다.
 
 비용과 시간 관계상 각각의 테스트셋에서 1000개씩만 테스트를 진행하였습니다. KsponSpeech는 [huggingface](https://huggingface.co/speechbrain/asr-conformer-transformerlm-ksponspeech#conformer-for-ksponspeech-with-transformer-lm) 및 [논문](https://www.mdpi.com/2076-3417/10/19/6936)에서 에러율을 확인할 수 있기 때문에 비교를 위해 3000개 발화(Utterance)를 모두 테스트 하였습니다.
 
-| API \ 데이터셋 | Avg. CER(%) | [주요 영역별 회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=464) | [회의<br/>음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=132) | [상담 음성](https://www.aihub.or.kr/aihubdata/data/view.do?&dataSetSn=100) | [저음질 전화망 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=571) | [한국어 강의 음성](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=115) | [한국어 음성 KsponSpeech eval clean](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) | [한국어 음성 KsponSpeech eval other](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) |
+| API \ 데이터셋 | Avg. CER(%) | [주요 영역별 회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=464) | [회의<br/>음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=132) | [상담 음성](https://www.aihub.or.kr/aihubdata/data/view.do?&dataSetSn=100) | [저음질<br>전화망 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=571) | [한국어 강의<br>음성](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=115) | [한국어 음성 KsponSpeech eval clean](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) | [한국어 음성 KsponSpeech eval other](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | OpenAI Whisper | 11.63 | 10.7 | 11.1 | 7.69 | 17.26 | 11.32 | 12.06 | 11.34 |
-| Google api v2   | 11.76 | N/A[^1] | 12.39 | 9.03 | 14.02 | 11.76 | 11.82 | 11.59 |
+| Google <br> api v2   | 11.76 | N/A[^1] | 12.39 | 9.03 | 14.02 | 11.76 | 11.82 | 11.59 |
 | ETRI | 9.97 | 6.95 | 11.2 | 9.32 | 15.16 | 10.07 | 9.99 | 7.15 |
 | 리턴제로 | **6.21** | **6.3** | **7.66** | **3.63** | **4.84** | **7.84** | **6.61** | **6.64** |
 | 리턴제로 Whisper[^2] | 7.92 | 6.37 | 9.47 | 5.72 | 5.52 | 8.77 | 9.74 | 9.86 |
@@ -143,15 +143,15 @@ AI-Hub의 데이터셋은 학습(training)과 검증(validation) 세트로 나�
 
 데이터셋에 대한 자세한 통계와 자료는 해당 데이터셋을 클릭하면 AI-Hub으로 이동하여 확인할 수 있습니다.
 
-| 데이터셋 | 화자 구성 | 평균 음성 길이 | 평균 글자 수 | 요약 설명 |
+| 데이터셋 | 화자 구성 | 평균 <br>음성<br>길이 | 평균 <br>글자수 | 요약 설명 |
 | --- | --- | --- | --- | --- |
-| [주요 영역별 회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=464) (v1.1) | 대화(3인 이상) | 4.18 | 32.24 | 시사토론, 독서모임, 온라인회의, 방송에서의 자연스러운 환경과 잡음이 결합된 회의 형태의 발성 |
-| [회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=132) (v.1) | 대화(3인 이상) | 6.33 | 45.40 | 3인 이상 EBS 토론/토크 콘텐츠로 오디오당 20~40분 내외 |
+| [주요 영역별 회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=464) (v1.1) | 대화<br>(3인 이상) | 4.18 | 32.24 | 시사토론, 독서모임, 온라인회의, 방송에서의 자연스러운 환경과 잡음이 결합된 회의 형태의 발성 |
+| [회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=132) (v1.0) | 대화<br>(3인 이상) | 6.33 | 45.40 | 3인 이상 EBS 토론/토크 콘텐츠로 오디오당 20~40분 내외 |
 | [상담 음성](https://www.aihub.or.kr/aihubdata/data/view.do?&dataSetSn=100) (v1.2) | 대화(2인) | 4.79 | 37.51 | 콜센터(교육, 금융, 통신판매 도메인) |
 | [저음질 전화망 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=571) (v1.1) | 대화(2인) | 4.61 | 28.15 | 음질이 낮은 전화망에서 다양한 잡음을 포함한 음성 |
 |  [한국어 강의 음성](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=115) (v1.1) | 강의(주로 1인) | 4.61 | 31.12 | 주제별, 수준별 학습 목적에 적합한 한국교육방송공사(EBS) TV/라디오 방송콘텐츠 및 온라인 강의 콘텐츠 |
-| [한국어 음성 (KsponSpeech eval clean)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) (v1.0) | 대화(2인) | 3.17 | 21.52 | 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 녹음하고 발성내용을 ERTI 전사규칙에 따라 철자전사 |
-| [한국어 음성 (KsponSpeech eval other)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) (v1.0) | 대화(2인) | 4.56 | 30.62 | 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 녹음하고 발성내용을 ERTI 전사규칙에 따라 철자전사 |
+| [한국어 음성 (KsponSpeech <br>eval clean)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) (v1.0) | 대화(2인) | 3.17 | 21.52 | 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 녹음하고 발성내용을 ERTI 전사규칙에 따라 철자전사 |
+| [한국어 음성 (KsponSpeech <br>eval other)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) (v1.0) | 대화(2인) | 4.56 | 30.62 | 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 녹음하고 발성내용을 ERTI 전사규칙에 따라 철자전사 |
   
 ---
 

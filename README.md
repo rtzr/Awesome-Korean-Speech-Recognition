@@ -44,12 +44,12 @@ API로 모델을 사용해 볼 수 있는 개발자 사이트입니다.
 
 ## 한국어 데이터셋
 
-1. ****주요 영역별 회의 음성**** - 시사토론, 독서모임, 온라인회의, 방송에서의 자연스러운 환경과 잡음이 결합된 회의 형태의 발성 데이터
+1. **주요 영역별 회의 음성** - 시사토론, 독서모임, 온라인회의, 방송에서의 자연스러운 환경과 잡음이 결합된 회의 형태의 발성 데이터
 2. **회의 음성** - TV, 라디오의 토론, 토크, 뉴스 등의 음성 콘텐츠에서 추출한 데이터
 3. **상담 음성** - 교육, 금융, 통신판매 도메인에 대한 콜센터 가상 시나리오 데이터
-4. ****저음질 전화망 음성**** - 실제 상담 환경에서 발생하는 다양한 잡음을 포함한 저음질 전화망 데이터
+4. **저음질 전화망 음성** - 실제 상담 환경에서 발생하는 다양한 잡음을 포함한 저음질 전화망 데이터
 5. **한국어 강의 음성** - EBS의 교육영상을 기반으로 만든 데이터
-6. ****한국어 음성 (KsponSpeech)**** - 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 스튜디오에서 녹음한 데이터
+6. **한국어 음성 (KsponSpeech)** - 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 스튜디오에서 녹음한 데이터
   
 ---
 
@@ -60,7 +60,7 @@ API로 모델을 사용해 볼 수 있는 개발자 사이트입니다.
 
 비용과 시간 관계상 각각의 테스트셋에서 1000개씩만 테스트를 진행하였습니다. KsponSpeech는 [huggingface](https://huggingface.co/speechbrain/asr-conformer-transformerlm-ksponspeech#conformer-for-ksponspeech-with-transformer-lm) 및 [논문](https://www.mdpi.com/2076-3417/10/19/6936)에서 에러율을 확인할 수 있기 때문에 비교를 위해 3000개 발화(Utterance)를 모두 테스트 하였습니다.
 
-| API \ 데이터셋 | Avg. CER(%) | [주요 영역별 회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=464) | [회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=132) | [상담 음성](https://www.aihub.or.kr/aihubdata/data/view.do?&dataSetSn=100) | [저음질 전화망 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=571) | [한국어 강의 음성](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=115) | [한국어 음성 (KsponSpeech eval clean)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) | [한국어 음성 (KsponSpeech eval other)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) |
+| API \ 데이터셋 | Avg. CER(%) | [주요 영역별 회의 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=464) | [회의<br/>음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=132) | [상담 음성](https://www.aihub.or.kr/aihubdata/data/view.do?&dataSetSn=100) | [저음질 전화망 음성](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=571) | [한국어 강의 음성](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=115) | [한국어 음성 KsponSpeech eval clean](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) | [한국어 음성 KsponSpeech eval other](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | OpenAI Whisper | 11.63 | 10.7 | 11.1 | 7.69 | 17.26 | 11.32 | 12.06 | 11.34 |
 | Google api v2   | 11.76 | N/A[^1] | 12.39 | 9.03 | 14.02 | 11.76 | 11.82 | 11.59 |

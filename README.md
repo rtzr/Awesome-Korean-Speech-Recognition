@@ -101,7 +101,7 @@ $\mathit{WER} = \frac{S+D+I}{N} = \frac{S+D+I}{S+D+C}$ , $\mathit{CER} = \frac{S
 
 https://cer-diff.vercel.app/
 
-이를 계산하는 라이브러리는 다양안 언어별로 다양하게 존재합니다.
+이를 계산하는 라이브러리는 다양한 언어별로 존재합니다.
 
 - [fastest-levenshtein](https://github.com/ka-weihe/fastest-levenshtein): Javascript / Typescript
 - [Jiwer](https://github.com/jitsi/jiwer/): Python
@@ -135,7 +135,7 @@ https://cer-diff.vercel.app/
 
 ## 전사 데이터 정규화(Normalization)
 
-2018년에 KsponSpeech가 공개될 때 만해도 음성인식 데이터가 많이 부족했는데 지금은 다양한 도메인, 다양한 목적을 가진 음성인식 데이터가 많이 공개되었습니다.
+2018년에 KsponSpeech가 공개될 때만 해도 음성인식 데이터가 많이 부족했는데 지금은 다양한 도메인, 다양한 목적을 가진 음성인식 데이터가 많이 공개되었습니다.
 
 하나의 회사가 모든 데이터를 만들지 않기 때문에 만든 회사마다 데이터셋의 정규화(normalization)가 모두 다르게 되어있는데요. 어떤 회사는 잡음을 `(NO:)` 로 표기하기도 하고 어떤 회사는 `/(noise)` 로 표기 하기도 합니다. 또 어떤 회사는 웃음을 `(SN:)` 으로 표기하기도 하고 어떤 회사는 `@웃음` 으로 표기 하기도 합니다. 이처럼 데이터셋마다 다르게 되어 있는 normalization을 잘 전처리 해야 좋은 음성인식 모델을 만들 수 있습니다.
 

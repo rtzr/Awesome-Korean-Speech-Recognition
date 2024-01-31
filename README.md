@@ -7,7 +7,7 @@ A curated list of **Korean speech recognition** resources for developers, includ
 **한국어 음성인식**을 사용해볼 수 있는 개발자 사이트의 API로 **AI-Hub**에서 공개한 다양한 테스트셋의 **에러율(Character Error Rate)** 을 음성인식 API별로 측정한 리포지토리입니다.
 본 리포지토리는 다음과 같은 내용을 다루고 있습니다.
 
-- Return Zero(리턴제로), Google, OpenAI Whisper, ETRI, Naver 등 다양한 음성인식 API를 사용하여 AI Hub 테스트셋에 대한 에러율(Character Error Rate) 측정
+- Return Zero(리턴제로), Google, OpenAI Whisper, ETRI, Naver 등 다양한 음성인식 API를 사용하여 AI-Hub 테스트셋에 대한 에러율(Character Error Rate) 측정
 - 한국어 음성인식 평가 방법에 대한 소개
 
 ---
@@ -59,6 +59,8 @@ API로 음성인식을 바로 사용해 볼 수 있는 개발자 사이트입니
 
 비용과 시간 관계상 테스트셋 별로 3000개의 문장을 샘플링하여 테스트를 진행하였습니다.
 
+3000개에 대한 데이터셋 정보는 [여기](https://github.com/rtzr/Awesome-Korean-Speech-Recognition/blob/main/docs/README.md)에서 확인하실 수 있습니다.
+
 테이블 내의 숫자는 작을수록 에러가 적다는 의미입니다.
 
 | API \ 데이터셋       | Avg. CER(%) | 주요 영역별 회의 | 회의     | 상담     | 저음질<br/>전화망 | 한국어<br/>강의 | KsponSpeech eval clean | KsponSpeech eval other |
@@ -99,7 +101,7 @@ $\mathit{WER} = \frac{S+D+I}{N} = \frac{S+D+I}{S+D+C}$ , $\mathit{CER} = \frac{S
 
 궁금한 문장을 직접 웹에 넣어 보실 수도 있습니다.
 
-https://cer-diff.vercel.app/
+<https://cer-diff.vercel.app/>
 
 이를 계산하는 라이브러리는 다양한 언어별로 존재합니다.
 
@@ -169,4 +171,4 @@ AI-Hub의 데이터셋은 학습(training)과 검증(validation) 세트로 나�
 
 본 프로젝트에 기여하고 싶은 경우, Issue를 만들고 Pull Request를 만들어주세요.
 
-e-mail: research@rtzr.ai
+e-mail: <research@rtzr.ai>

@@ -1,0 +1,7 @@
+2.Validation/*/DGBEJ21000043.wav
+2.Validation/*/DGBEC21000101.wav
+2.Validation/*/DGBED21000031.wav
+2.Validation/*/SRBAC21000032.wav
+2.Validation/*/SRBBC21000056.wav
+2.Validation/*/SRBAC21000020.wav
+2.Validation/*/SRBAA21000065.wav

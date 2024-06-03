@@ -49,7 +49,7 @@ API로 음성인식을 바로 사용해 볼 수 있는 개발자 사이트입니
 3. [**상담 음성**](https://www.aihub.or.kr/aihubdata/data/view.do?&dataSetSn=100) - 교육, 금융, 통신판매 도메인에 대한 콜센터 가상 시나리오 데이터
 4. [**저음질 전화망 음성**](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=571) - 실제 상담 환경에서 발생하는 다양한 잡음을 포함한 저음질 전화망 데이터
 5. [**한국어 강의 음성**](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=115) - EBS의 교육영상을 기반으로 만든 데이터
-6. [**한국어 음성 (KsponSpeech)**](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) - 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 스튜디오에서 녹음한 데이터로 테스트 세트가 2개로 나뉘어 구성됩니다(eval clean, eval other)
+6. [**한국어 음성 (KsponSpeech)**](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123) - 두 사람이 다양한 주제로 자유롭게 대화하는 음성을 스튜디오에서 녹음한 데이터로 테스트 세트가 2개로 나뉘어 구성됩니다. (eval clean, eval other)
 
 ---
 
@@ -69,8 +69,8 @@ API로 음성인식을 바로 사용해 볼 수 있는 개발자 사이트입니
 | Google <br> api v2   | 11.50       | N/A[^1]          | 11.62    | 8.37     | 14.11             | 11.48           | 11.82                  | 11.59                  |
 | ETRI                 | 10.19       | 9.95             | 10.56    | 8.36     | 15.46             | 9.89            | 9.99                   | 7.15                   |
 | Naver ClovaSpeech    | 9.52        | 7.88             | 8.53     | 5.89     | 9.09              | 13.71           | 10.66                  | 10.86                  |
-| 리턴제로             | **6.18**    | **6.78**         | **7.27** | **3.56** | **4.66**          | **7.76**        | **6.61**               | **6.64**               |
-| 리턴제로 Whisper[^2] | 7.79        | 6.43             | 8.85     | 5.44     | 5.52              | 8.68            | 9.74                   | 9.86                   |
+| 리턴제로             | **6.18**    | **6.78**         | **7.27** | **3.56** | 4.66          | 7.76        | **6.61**               | **6.64**               |
+| 리턴제로 Whisper[^2] | 6.59        | 6.84             | 8.33     | 4.1     | **4.26**              | **7.11**            | 7.78                   | 7.73                   |
 
 [^1]: Google의 음성인식 파일 크기의 제한으로 생략 `Request audio can be a maximum of 10485760 bytes, Audio can be of a a maximum of 60 seconds.`
 [^2]: OpenAI에서 공개한 Whisper 오픈소스 모델에 리턴제로의 데이터를 파인튜닝(fine-tuning)한 모델입니다.
@@ -101,7 +101,7 @@ $\mathit{WER} = \frac{S+D+I}{N} = \frac{S+D+I}{S+D+C}$ , $\mathit{CER} = \frac{S
 
 궁금한 문장을 직접 웹에 넣어 보실 수도 있습니다.
 
-<https://cer-diff.vercel.app/>
+<https://cer-diff.vercel.app>
 
 이를 계산하는 라이브러리는 다양한 언어별로 존재합니다.
 

@@ -114,6 +114,7 @@ $\mathit{WER} = \frac{S+D+I}{N} = \frac{S+D+I}{S+D+C}$ , $\mathit{CER} = \frac{S
 - [Jiwer](https://github.com/jitsi/jiwer/): Python
 - [Speechbrain](https://github.com/speechbrain/speechbrain/blob/develop/speechbrain/utils/edit_distance.py): Python
 - [Go levenshitein](https://github.com/agnivade/levenshtein): Go
+- [kocer](https://github.com/Choi-kwan-u/kocer): Python - 철자/발음 숫자 표기, 띄어쓰기, 문장부호 차이를 오류로 세지 않는 한국어 CER
 
 ### **한국어 특성에 따른 문제**
 

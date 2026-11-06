@@ -177,3 +177,7 @@ AI-Hub의 데이터셋은 학습(training)과 검증(validation) 세트로 나�
 본 프로젝트에 기여하고 싶은 경우, Issue를 만들고 Pull Request를 만들어주세요.
 
 e-mail: <research@rtzr.ai>
+
+### Speech Capture & Local AI Hardware
+
+- [OneMira C1](https://onemira.com/products/c1) - Standalone dual-microphone AI voice recorder with 5m far-field pickup, local AI transcription, multi-speaker separation (`Speaker ID`), stereo `.WAV` + Google Native OKF Markdown export, and zero cloud subscription ([GitHub MCP](https://github.com/onemira-space/onemira-mcp)).
